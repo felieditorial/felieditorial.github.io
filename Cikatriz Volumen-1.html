@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style-1.css">
+    <link rel="stylesheet" href="/css/cookies.css">
+    <title>Feli Editorial/Inicio</title>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MB7HJ8K');</script>
+		<!-- End Google Tag Manager -->
+	
+</head>
+<body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MB7HJ8K"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <div class="aviso-cookies" id="aviso-cookies">
+            <img class="galleta" src="/img/calavera-y-huesos.png" alt="Galleta">
+            <h3 class="titulo">Cookies</h3>
+            <p class="parrafo">Utilizamos cookies propias por normativa y seguridad de la pagina.</p>
+            <button class="boton" id="btn-aceptar-cookies">De acuerdo</button>
+            <a class="enlace" href="aviso-cookies.html">Aviso de Cookies</a>
+        </div>
+        <div class="fondo-aviso-cookies" id="fondo-aviso-cookies"></div>
+    
+        <script src="js/aviso-cookies.js"></script>
+
+    <div class="contenedor">
+		<header>
+			<div class="logo">
+				<img class="bordeLogo" src="/logo-cabezera/Sello Feli ediciones02.jpg" width="150" alt="">
+				<a href="#">Feli Editorial</a>
+			</div>
+
+			<nav class="colorBordeMenu" >
+				<a href="/index.html">Inicio</a>
+				<a href="https://felieditorial.blogspot.com/">Blog</a>
+				
+				<a href="/Formulario-contacto.html">Contacto</a>
+			</nav>
+		</header>
+
+		<section class="main">
+			<article>
+				<center><h2 class="titulo">Libro de Cikatriz "Cikatriz Volumen 1"</h2></center>
+                <center><img class="bordeImgLibro"   src="/libros/cikatriz-Vol-1.jpg" width="300" height="auto"></center>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<center><img class="bordeImgLibro"   src="/libros/cikatriz contraportada.jpg" width="300" height="auto"></center>
+				<script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+				<script>
+				  function initPayPalButton() {
+					paypal.Buttons({
+					  style: {
+						shape: 'rect',
+						color: 'blue',
+						layout: 'vertical',
+						label: 'pay',
+						
+					  },
+			  
+					  createOrder: function(data, actions) {
+						return actions.order.create({
+						  purchase_units: [{"description":"Libro de Eskorbuto \"Rock y Violencia\"","amount":{"currency_code":"EUR","value":25,"breakdown":{"item_total":{"currency_code":"EUR","value":15},"shipping":{"currency_code":"EUR","value":10},"tax_total":{"currency_code":"EUR","value":0}}}}]
+						});
+					  },
+			  
+					  onApprove: function(data, actions) {
+						return actions.order.capture().then(function(orderData) {
+						  
+						  // Full available details
+						  console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+			  
+						  // Show a success message within this page, e.g.
+						  const element = document.getElementById('paypal-button-container');
+						  element.innerHTML = '';
+						  element.innerHTML = '<h3>Thank you for your payment!</h3>';
+			  
+						  // Or go to another URL:  actions.redirect('thank_you.html');
+						  
+						});
+					  },
+			  
+					  onError: function(err) {
+						console.log(err);
+					  }
+					}).render('#paypal-button-container');
+				  }
+				  initPayPalButton();
+				</script>
+				<div>
+
+					<center><a href="/Tienda.html"> <img src="/iconos/whatsapp (1).png"><h4>Tambien se aceptan pagos a Contrarenbolso "Pulsa Aqui" Para Contacto</h4></a></center>
+					<center> <a href="/Tienda.html"> <img src="/iconos/bizum.png"><h4>Se acepta Bizum Contacta </h4></a> </center>
+					
+					</div>
+
+
+			</article>
+
+			<article>
+				<h2 class="titulo">Descripcion del libro</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</article>
+		</section>
+
+		<aside>
+
+
+			<div class="widget">
+				<div class="imagen"> </div>
+               <a href="/index.html"> <img class="img-widget" src="/libros/libro eskorbuto-rock y violencia.jpg">
+                <center><h5>Libro de Eskorbuto "Rock y Violencia"</h5></center></a>
+			</div>
+
+			<div class="widget">
+				<div class="imagen"> </div>
+               <a href="/siete pulgadas.html"> <img class="img-widget" src="/libros/Portada Siete Pulgadas.jpg">
+                <center><h5>Libro "Siete Pulgadas"</h5></center></a>
+			</div>
+
+			
+			<div class="widget">
+				<div class="imagen"></div>
+                <a href="eskorbuto RyV novela grafica.html"> <img class="img-widget" src="/libros/Rock y Violencia La novela grafica.jpg">
+                <center><h5>Libro de Eskorbuto "Rock y Violencia" "La Novela Grafica"</h5></center></a>
+			</div>
+        
+			<div class="widget">
+				<div class="imagen"></div>
+               <a href="/Sueños de un muchacho.html"> <img class="img-widget" src="/libros/portada-sueños de un muchacho.jpg">
+                <center><h5>Libro de Eskorbuto "Sueños de un Muchacho"</h5></center></a>
+			</div>
+           
+			<div class="widget">
+				<div class="imagen"></div>
+                <a href="Recidivo Vol-2.html"> <img class="img-widget" src="/libros/Eskorbuto Recidivo 2 volumenes.jpg">
+                <center><h5>Libro de Eskorbuto "Recidivo Volumen 1 y 2"</h5></center></a> 
+			</div>
+           
+
+		</aside>
+
+		<footer>
+	
+			<div class="social">
+				<a href="#">FB</a>
+				<a href="#">TW</a>
+			</div>
+		</footer>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
